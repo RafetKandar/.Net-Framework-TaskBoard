@@ -64,5 +64,9 @@ Taskboard is a job tracking application.
  <br>
 <img src = "estimated_time.PNG" width = 10000px height=200></img>
 
+<p style = "font-size:20">NOT : Ek olarak uygulamanın içeresinde 6 adet White box testi bulunmaktadır.
+(NOTE: In addition, there are 6 White box tests in the application.)
+</p>
+
 
 </ul>
