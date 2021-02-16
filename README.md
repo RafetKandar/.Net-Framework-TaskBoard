@@ -46,7 +46,7 @@ Taskboard is a job tracking application.
  
   <li>Teknik Kart Ekleme  <strong> (Add Technical Card):  </strong></li>
   <p>Müşteri Kartı üzerinde bulunan Add Technical Card butonuna tıklanarak açılan aşağıdaki ekran üzerinden gerekli yerler doldurularak işlem gerçekleştirilir.</br>
-(The Add Technical Card button on the Customer Card is clicked. The process is carried out by filling the required places on the screen that opens.)
+--> (The Add Technical Card button on the Customer Card is clicked. The process is carried out by filling the required places on the screen that opens.)
 </strong>
 </p>
 
