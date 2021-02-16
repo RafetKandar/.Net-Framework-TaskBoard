@@ -23,4 +23,16 @@ Taskboard is a job tracking application.
  
  <img src = "customer_update.PNG" width = 10000px height=450></img>
  
+ <li>Müşteri Kartı Detay Görüntüleme  <strong> (Detail Customer Card):  </strong></li>
+  <p>Eklenen müşteri kartı kart üzerindeki detay butonuna tıklanarak açılan  ekran üzerinden kart detayı görüntülenebilir.</br>
+ <strong> --> (The card details can be viewed on the screen opened by clicking the detail button on the added customer card card.)
+</strong>
+</p>
+
+ <li>Müşteri Kartının İş Takibi  <strong> (business tracking of customer card):  </strong></li>
+  <p>Eklenen müşteri kartı kart üzerindeki iş takibi butonuna tıklanarak açılan aşağıdaki ekran üzerinden iş takibi eklemesi gerçekleştirilebilir. Ayrıca eklenen takip işlemleri ekran üzerinden görüntülenebilir.</br>
+ <strong> --> (The job tracking button on the card is clicked. Job tracking can be added on the screen that opens. In addition, added tracking transactions can be viewed on the screen.))
+</strong>
+</p>
+ 
 </ul>
