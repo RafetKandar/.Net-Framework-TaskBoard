@@ -8,5 +8,7 @@ Taskboard is a job tracking application.
   <p>Yukarıdaki gif üzerinde görünen Customer Card bölümündeki artı butonuna tıklayınız ve aşağıda gördüğününüz müşteri kartı bilgilerini girerek ekle butonuna tıklayanız. </br>
  <strong> --> (Click the plus button in the Customer Card section that appears on the gif and enter the customer card information you see below and click the add button.) </strong>
 </p>
+
 ![CSharp-Form---Bir-Kelime-Bir-Islem---Kelime-Kismi](add_customer.PNG) </br>
+
 </ul>
