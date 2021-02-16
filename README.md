@@ -15,4 +15,10 @@ Taskboard is a job tracking application.
  
  <img src = "added_customer.PNG" ></img>
  
+  <li>Müşteri Kartının Güncellenmesi  <strong> (Update Customer Card):  </strong></li>
+  <p>Eklenen müşteri kartı kart üzerindeki güncelle(refresh) butonuna tıklanarak açılan aşağıdaki ekran üzerinden istenilen yerlerin değiştirilmesinden sonra güncelle butonuna tıklanarak işlem gerçekleştirilir. </br>
+ <strong> --> (The update button is clicked. After changing the desired places on the screen below, the process is executed by clicking the update button.)
+</strong>
+</p>
+ 
 </ul>
