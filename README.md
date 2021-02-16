@@ -39,4 +39,6 @@ Taskboard is a job tracking application.
 <strong> (Technical cards and details of the customer card can be viewed on this screen.) </strong>
 </li>
  
+  <img src = "customer business tracking.PNG" width = 10000px height=450></img>
+ 
 </ul>
