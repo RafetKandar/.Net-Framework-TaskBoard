@@ -61,9 +61,8 @@ Taskboard is a job tracking application.
 <img src = "technical_update.PNG" width = 10000px height=500></img>
 
 <li>Eklenen kartların en alt kısmında kartlara ait tahmini tamamlanma süresi gösterilmektedir. <br> --> <strong> (The estimated completion time of the cards is shown at the bottom of the added cards.) </strong></li>
- 
-
-<img src = "technical_update.PNG" width = 10000px height=500></img>
+ <br>
+<img src = "estimated_time.PNG" width = 10000px height=500></img>
 
 
 </ul>
