@@ -31,7 +31,7 @@ Taskboard is a job tracking application.
 
  <li>Müşteri Kartının İş Takibi  <strong> (business tracking of customer card):  </strong></li>
   <p>Eklenen müşteri kartı kart üzerindeki iş takibi butonuna tıklanarak açılan aşağıdaki ekran üzerinden iş takibi eklemesi gerçekleştirilebilir. Ayrıca eklenen takip işlemleri ekran üzerinden görüntülenebilir.</br>
- <strong> --> (The job tracking button on the card is clicked. Job tracking can be added on the screen that opens. In addition, added tracking transactions can be viewed on the screen.))
+ <strong> --> (The job tracking button on the card is clicked. Job tracking can be added on the screen that opens. In addition, added tracking transactions can be viewed on the screen.)
 </strong>
 </p>
 
@@ -43,5 +43,13 @@ Taskboard is a job tracking application.
   
    <li>Yukarıdaki ekran üzerinden tamamlanan işler bitti butonuna tıklanarak belirtilebilir ya da sil butonuna tıklanarak silme işlemi yapılabilir. </br> --> <strong> (The completed jobs can be specified by clicking on the done button or they can be deleted by clicking the delete button.)
  </strong></li>
+ 
+  <li>Teknik Kart Ekleme  <strong> (Add Technical Card):  </strong></li>
+  <p>Müşteri Kartı üzerinde bulunan Add Technical Card butonuna tıklanarak açılan aşağıdaki ekran üzerinden gerekli yerler doldurularak işlem gerçekleştirilir.</br>
+(The Add Technical Card button on the Customer Card is clicked. The process is carried out by filling the required places on the screen that opens.)
+</strong>
+</p>
+
+<img src = "add_technicalcard.PNG" width = 10000px height=500></img>
 
 </ul>
