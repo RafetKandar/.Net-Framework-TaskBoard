@@ -11,4 +11,7 @@ Taskboard is a job tracking application.
 
 <img src = "add_customer.PNG" height = 300 width = 500></img>
 
+ <li>Müşteri kartının eklendikten sonraki görüntüsü aşağıdaki gibi olmalıdır.<strong> (Image after adding the customer card) </strong></li>
+ 
+ 
 </ul>
