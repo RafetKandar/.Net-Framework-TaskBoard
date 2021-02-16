@@ -9,6 +9,6 @@ Taskboard is a job tracking application.
  <strong> --> (Click the plus button in the Customer Card section that appears on the gif and enter the customer card information you see below and click the add button.) </strong>
 </p>
 
-<img src = "add_customer.PNG" height = 100 width = 100 ></img>
+<img src = "add_customer.PNG" height = 400 width = 400 ></img>
 
 </ul>
