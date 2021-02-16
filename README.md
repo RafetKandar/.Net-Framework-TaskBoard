@@ -35,8 +35,8 @@ Taskboard is a job tracking application.
 </strong>
 </p>
 
-<li>Bu ekran üzerinden müşteri kartına ait teknik kartlar ve detayları görüntülenebilir.
-(Technical cards and details of the customer card can be viewed on this screen.)
+<li>Bu ekran üzerinden müşteri kartına ait teknik kartlar ve detayları görüntülenebilir. </br>
+<strong> (Technical cards and details of the customer card can be viewed on this screen.) </strong>
 </li>
  
 </ul>
