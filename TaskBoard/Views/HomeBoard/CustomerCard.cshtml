@@ -1,0 +1,58 @@
+﻿@using TaskBoard.Models.Classes
+@model List<MüsteriKart>
+
+<div class="board left">
+    <h3>
+        Customer Card
+        <button class="button2" id="addCustomerCard" onclick="window.location.href = '/CustomerCard/AddCustomerCard/'"><i class="fa fa-plus"></i></button>
+    </h3>
+    <div class="dropzone">
+        @foreach (var item in Model)
+        {
+            <div class="card" draggable="true">
+                <div class="status blue">
+                    <a class="deleteButton" href="/CustomerCard/DeleteCustomerCard/@item.ID"><i class="fa fa-trash"></i></a>
+                    <a class="updateButton" href="/CustomerCard/GetCard/@item.ID"><i class="fa fa-refresh"></i></a>
+                    <a class="updateButton" href="/CustomerCard/CardDetail/@item.ID" style="margin-left:107px"><i class="fa fa-book"></i></a>
+                    <a class="updateButton" href="/CustomerCard/AddCustomerCardWork/@item.ID" style="margin-left:75px"><i class="fa fa-briefcase"></i></a>
+
+                </div>
+                <div style="width: 100%">
+                    <div class="card-body">
+                        <h5 class="card-title">@item.ProjeNo</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Kart No : @item.KartNo</h6>
+                        <p class="card-text">
+                            @if (item.IsinAciklamasi.Length > 38)
+                            {
+                                @item.IsinAciklamasi.Substring(0, 38)
+                            }
+
+                            @if (item.IsinAciklamasi.Length < 38)
+                            {
+                                @item.IsinAciklamasi
+                            }
+                        </p>
+                        <a href="/TechnicalCard/AddTechnicalCard/@item.ID" class="card-link gölgeCustomer" id="la">Add Tecnical Card</a>
+                    </div>
+                    <h6 style="font-size:13px">
+                        <i class="fa fa-clock-o"></i> Tahmini Süre :
+                        @if (item.TeknikST != 0 && item.TeknikST.ToString().Length > 3)
+                        {
+                            <strong style="color:#c3c6c3">@item.TeknikST.ToString().Substring(0, 2) Gün @item.TeknikST.ToString().Substring(3, 1) Saat</strong>
+                        }
+                        else if (item.TeknikST != 0 && item.TeknikST.ToString().Length < 3)
+                        {
+                            <strong style="color:#c3c6c3">@item.TeknikST.ToString().Substring(0, 2) Gün 0 Saat</strong>
+                        }
+                        else
+                        {
+                            <strong style="color:#c3c6c3">-</strong>
+                        }
+                    </h6>
+                </div>
+            </div>
+        }
+
+    </div>
+</div>
+

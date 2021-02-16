@@ -1,0 +1,44 @@
+﻿
+@{
+    ViewBag.Title = "HomeBoard";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+    <body>
+        <div class="container">
+            <div class="boards">
+                @Html.Action("CustomerCard", "HomeBoard")
+                @Html.Action("ToDoCard", "HomeBoard")
+                <div class="board">
+                    <h3>
+                        In progress
+                        <button class="button1"><i class="fa fa-plus"></i></button>
+                    </h3>
+                    <div class="dropzone">
+                    
+                    </div>
+                </div>
+                <div class="board">
+                    <h3>
+                        Testing
+                        <button class="button3"><i class="fa fa-plus"></i></button>
+                    </h3>
+                    <div class="dropzone">
+
+                    </div>
+                </div>
+                <div class="board">
+                    <h3>
+                        Done
+                        <button class="button4"><i class="fa fa-plus"></i></button>
+                    </h3>
+                    <div class="dropzone">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </body>
+

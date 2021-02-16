@@ -1,0 +1,56 @@
+﻿@model TaskBoardML.Model.ModelInput
+
+@{
+    Layout = "~/Views/Shared/_CardLayout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Technical Card</title>
+</head>
+<body>
+            <h1 class="title">Teknik Kart</h1>
+            <form asp-action ="AddTechnicalCard" class="form-group" action="/TechnicalCard/AddTechnicalCard" method="post">
+                <fieldset>
+                    <legend class="fas fa-paperclip paperclip"></legend>
+                    <div class="info infoTop">
+                        <div class="info-item">
+                            <label class="icon" for="name"><i class="fas fa-pencil-alt"></i></label>
+                            <input class="infoInput" type="text" name="ProjeNo" id="ProjeNo" placeholder="Proje No/Adı" value="@ViewBag.ProjeNo" required />
+                        </div>
+                        <div class="info-item">
+                            <label class="icon" for="name"><i class="fa fa-clock-o"></i></label>
+                            <input class="infoInput" type="text" name="TahminSüresi" id="TahminSüresi" placeholder="Tahmini Süre" readonly />
+                        </div>
+                        <div class="info-item">
+                            <label class="icon" for="name"><i class="fas fa-calendar"></i></label>
+                            <input class="infoInput" type="text" name="Tarih" id="Tarih" placeholder="Tarih" required />
+                        </div>
+                        <div class="info-item">
+                            <label class="icon" for="name"><i class="fas fa-pencil-alt"></i></label>
+                            <input class="infoInput" type="text" name="KartNo" id="KartNo" placeholder="Kart No" value="@ViewBag.KartNo" required />
+                        </div>
+                        <div class="info-item">
+                            <label class="icon" for="age"><i class="fa fa-clock-o" style="color:red"></i></label>
+                            <input class="infoInput" type="text" name="GerçekleşenSüre" id="GerçekleşenSüre" placeholder="Gerçekleşen Süre" readonly/>
+                        </div>
+                        <div class="info-item">
+                            <label asp-for="TeknikUzman" class="icon" for="age"><i class="fa fa-user"></i></label>
+                            <input asp-for="TeknikUzman" class="infoInput" type="text" name="TeknikUzman" id="TeknikUzman" placeholder="Teknik Uzman" required />
+                        </div>
+                        <input type="hidden" name="MüsteriKartId" id="MüsteriKartId" value="@ViewBag.deger" required />
+                        <input asp-for="Risk" type="hidden" name="Risk" id="Risk" value="@ViewBag.Risk" required />
+                        <input asp-for="IslemTipi" type="hidden" name="IslemTipi" id="IslemTipi" value="@ViewBag.IslemTipi" required />
+                        <input asp-for="Oncelik" type="hidden" name="Oncelik" id="Oncelik" value="@ViewBag.Oncelik" required />
+                    </div>
+                    <br />
+                    <h3>İşin Açıklaması :</h3>
+                    <textarea rows="12" name="IsinAciklamasi" id="IsinAciklamasi"></textarea>
+                    <h3>Notlar :</h3>
+                    <textarea rows="6" name="Notlar" id="Notlar"></textarea>
+                    <button class="topSpace" value="AddCard" name="addCard" type="submit">Teknik Kart Ekle</button>
+                </fieldset>
+            </form>
+</body>
+</html>

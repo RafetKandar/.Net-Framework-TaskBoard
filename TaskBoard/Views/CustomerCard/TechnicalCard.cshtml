@@ -1,0 +1,22 @@
+﻿@using TaskBoard.Models.Classes
+@model List<TeknikKart>
+
+    <form class="form-group">
+        <table style="width:100%;">
+            <tr class="titleTable">
+                <th scope="col"><i class="fas fa-pencil-alt"></i> Proje Adı</th>
+                <th scope="col"><i class="fas fa-pencil-alt"></i> Kart No</th>
+                <th scope="col"><i class="fas fa-user"></i> Teknik Uzman</th>
+                <th><i class="fas fa-info-circle"></i> Detay</th>
+            </tr>
+            @foreach (var item in Model)
+            {
+                <tr class="tdTable">
+                    <td class="line"  scope="row">@item.ProjeNo</td>
+                    <td class="line" >@item.KartNo</td>
+                    <td class="line">@item.TeknikUzman</td>
+                    <td><button type="button" class="fa fa-book" onclick="window.location.href = '/TechnicalCard/CardDetail/@item.ID'" style="width:100%;color:white;background-color:#222222"></button></td>
+                </tr>
+            }
+        </table>
+    </form>

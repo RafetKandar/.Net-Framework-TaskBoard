@@ -1,0 +1,26 @@
+﻿@using TaskBoard.Models.Classes
+@model List<MüsteriKartIsTakibi>
+
+    <form class="form-group">
+        <table style="width:100%;">
+            <tr class="titleTable">
+                <th scope="col"><i class="fas fa-calendar"></i> Tarih</th>
+                <th scope="col"><i class="fa fa-check"></i> Durum</th>
+                <th scope="col"><i class="fa fa-files-o"></i> Yapılacak İş</th>
+                <th scope="col"><i class="fa fa-file-text"></i> Açıklama</th>
+                <th><i class="fa fa-hourglass-end"></i> Bitti</th>
+                <th><i class="fa fa-trash"></i> Sil</th>
+            </tr>
+            @foreach (var item in Model)
+            {
+                <tr class="tdTable">
+                    <td class="line" id="@item.ID" scope="row">@item.Tarih</td>
+                    <td class="line" id="@item.ID">@item.Durum</td>
+                    <td class="line" id="@item.ID">@item.YapılacakIs</td>
+                    <td class="line" id="@item.ID">@item.Aciklama</td>
+                    <td><button type="button" id="@item.ID" class="fa fa-check checkButton" style="width:100%"></button></td>
+                    <td><button type="button" id="deleteButton" class="fa fa-trash" onclick="window.location.href = '/CustomerCard/DeleteWorkFollow/@item.ID'" style="width:100%"></button></td>
+                </tr>
+            }
+        </table>
+    </form>

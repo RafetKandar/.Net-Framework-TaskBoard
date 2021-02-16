@@ -1,0 +1,301 @@
+﻿
+html, body {
+    height: 100%;
+    background-color: #808080;
+    opacity: 1;
+}
+
+body, h1, h3, input {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 16px;
+    color: #666;
+}
+
+h1, h3 {
+    padding: 12px 0;
+    font-weight: 600;
+    color: #121212;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+.space {
+    margin-right: 15px
+}
+
+.main-block, .info {
+    display: flex;
+    flex-direction: column;
+}
+
+.smallTitle {
+    font-size: 22px;
+    font-weight: 500;
+    text-shadow: 5px 2px 10px #160101;
+}
+
+.main-block {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100%;
+    background: url("/uploads/media/default/0001/01/49bff73f282c2c21f3341f1fe457fe35337b1792.jpeg") no-repeat center;
+    background-size: cover;
+}
+
+.checkButton {
+    background-color: #9b1515;
+    width: 7%;
+}
+
+
+.addButton {
+    background-color: #9b1515;
+    width: 7%;
+}
+
+.line {
+    text-decoration: none;
+    text-decoration-color: none;
+    text-decoration-style: none;
+    text-align: center;
+}
+
+.titleTable {
+    color: #ebebeb;
+    background-color: #666;
+}
+
+.tdTable {
+    color: #000000;
+}
+
+form {
+    width: 86%;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: solid 1px #ccc;
+    box-shadow: 15px -5px 20px #000000;
+    background: #ebebeb;
+}
+
+.title {
+    color: black;
+    text-shadow: 10px 5px 8px #160101;
+    font-size: 40px;
+    font-weight: 400;
+    opacity: .8;
+}
+
+.info-item {
+    width: 100%;
+}
+
+input {
+    width: calc(100% - 57px);
+    height: 36px;
+    padding-left: 10px;
+    margin: 0 0 12px -5px;
+    border-radius: 0 5px 5px 0;
+    border: solid 1px #cbc9c9;
+    box-shadow: 1px 2px 5px rgba(0,0,0,.09);
+    background: #fff;
+}
+
+.icon {
+    padding: 9px 15px;
+    margin-top: -1px;
+    border-radius: 5px 0 0 5px;
+    border: solid 0px #cbc9c9;
+    background: #666;
+    color: #fff;
+}
+
+input[type=radio] {
+    width: 24px;
+    box-shadow: none;
+    position: relative;
+    padding-left: 35px;
+}
+
+    input[type=radio]:checked {
+        color: green;
+    }
+
+.oncelik-radio {
+    display: flex;
+    padding-left: 10px;
+    cursor: grab;
+    font-size: 18px;
+    padding-top: 7px;
+}
+
+.example-radio {
+    display: flex;
+    position: relative;
+    padding-left: 35px;
+    cursor: grab;
+    font-size: 18px;
+    padding-top: 5px;
+}
+
+    .example-radio input {
+        opacity: 0;
+    }
+
+.checkmark-radio {
+    position: absolute;
+    top: 4px;
+    left: 0;
+    height: 24px;
+    width: 24px;
+    background-color: #bbb;
+    border-radius: 50%;
+}
+
+.example-radio input:checked ~ .checkmark-radio {
+    background-color: #285f30;
+}
+
+.checkmark-radio:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.example-radio input:checked ~ .checkmark-radio:after {
+    display: block;
+}
+
+.example-radio .checkmark-radio:after {
+    top: 7px;
+    left: 8px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: white;
+}
+
+textarea {
+    width: 99%;
+    margin-bottom: 12px;
+}
+
+.paperclip {
+    font-size: 27px;
+    opacity: .9;
+    text-shadow: 5px 3px 4.5px #282525;
+    color: #191818
+}
+
+
+
+.tableGrid {
+    width: 21%;
+    margin-left: 1px
+}
+
+.labelWork {
+    padding: 45px;
+    font-weight: 500;
+    outline: none;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 20px;
+    color: #000000;
+}
+
+button {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    background: #8ebf42;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+}
+
+
+.grade-type div {
+    display: flex;
+    margin: 6px 0;
+}
+
+@media (min-width: 568px) {
+    .info {
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    .info-item {
+        width: 30%;
+    }
+}
+
+table, th, td {
+    border: 1px solid;
+    font-size: medium;
+    font-style: initial;
+    font-weight: 900;
+}
+
+.topSpace {
+    margin-top: 10px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.left {
+    margin-left: 15px;
+}
+
+.infoInput {
+    width: 150px
+}
+
+.cardSize {
+    width: 1000px;
+    margin-left: 260px;
+    margin-top: 50px;
+}
+
+.infoTop {
+    margin-top: 10px;
+    margin-left: 20px
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 25px 35px;
+    position: absolute;
+    left: 100px;
+    top: 400px;
+}
+
+    a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+.previous {
+    background-color: black;
+    color: white;
+}
+
+.next {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.round {
+    border-radius: 50%;
+}

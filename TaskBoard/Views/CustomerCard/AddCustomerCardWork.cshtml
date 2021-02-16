@@ -1,0 +1,75 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_CardLayout.cshtml";
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Card Work</title>
+</head>
+<body>
+            <h1 class="title">Müşteri Kart İş Takibi</h1>
+            <form class="form-group" action="/CustomerCard/AddCustomerCardWork" method="post">
+                <fieldset>
+                    <legend class="fas fa-paperclip paperclip"></legend>
+                    <div class="info infoTop">
+                        <div class="info-item">
+                            <label class="icon" for="name"><i class="fas fa-pencil-alt"></i></label>
+                            <input class="infoInput" type="text" value="@ViewBag.Name" readonly />
+                        </div>
+                        <div class="info-item">
+                            <label class="icon" for="name"><i class="fa fa-clock-o" style="color:red"></i></label>
+                            <input class="infoInput" type="text" value="@ViewBag.Time.ToString("#.0")" readonly />
+                        </div>
+                        <div class="info-item">
+                            <label class="icon" for="name"><i class="fa fa-exclamation-triangle"></i></label>
+                            <input class="infoInput" type="text" value="@ViewBag.Risk" readonly />
+                        </div>
+                        <input type="hidden" placeholder="ID" name="MüsteriKartId" id="MüsteriKartId" value="@ViewBag.deger4" required />
+
+                    </div>
+                    <div style="margin-top:25px">
+                        <label class="labelWork"><i class="fas fa-calendar"></i> Tarih</label>
+                        <label class="labelWork"><i class="fa fa-check"></i> Durum</label>
+                        <label class="labelWork"><i class="fa fa-files-o"></i> Yapılacak İş</label>
+                        <label class="labelWork"><i class="fa fa-file-text"></i> Açıklama</label>
+                    </div>
+
+                    <div style="margin-top:10px">
+                        <input class="tableGrid" type="text" name="Tarih" id="Tarih" placeholder="Tarih" required />
+                        <input class="tableGrid" type="text" name="Durum" id="Durum" placeholder="Durum" required />
+                        <input class="tableGrid" type="text" name="YapılacakIs" id="YapılacakIs" placeholder="Yapılacak İş" required />
+                        <input class="tableGrid" type="text" name="Aciklama" id="Aciklama" placeholder="Açıklama" required />
+
+                        <button class="addButton" value="AddWork" name="addWork" type="submit">Ekle</button>
+                    </div>
+                </fieldset>
+            </form>
+            @Html.Action("WorkTable", "CustomerCard", new { id = ViewBag.deger4 })
+            <h3 class="smallTitle">Teknik Kartlar</h3>
+            @Html.Action("TechnicalCard", "CustomerCard", new { id = ViewBag.deger4 })
+</body>
+</html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $(".checkButton").on({
+            click: function () {
+                $(this).css("background-color", "#07a427");
+                var dgr = $(this).attr("id");
+                $(".line").each(function () {
+                    var a = $(this).attr("id");
+                    if (dgr == a) {
+                        $(this).css("text-decoration", "line-through");
+                        $(this).css("text-decoration-color", "darkred");
+                        $(this).css("text-decoration-style", "double");
+
+                    }
+                });
+            },
+        });
+    });
+</script>

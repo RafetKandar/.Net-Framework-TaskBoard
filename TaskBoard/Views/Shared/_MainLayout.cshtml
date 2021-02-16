@@ -1,0 +1,46 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+
+    <meta name="viewport" content="width=device-width" />
+    <title>Task Board</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="~/Content/css/HomeLayout.css" rel="stylesheet" />
+   
+</head>
+<body>
+    <div class="content">
+        <div class="content__container">
+            <p class="content__container__text">
+                My TaskBoard
+            </p>
+
+            <ul class="content__container__list">
+                <li class="content__container__list__item">Stories !</li>
+                <li class="content__container__list__item">To Do !</li>
+                <li class="content__container__list__item">In Progreses !</li>
+                <li class="content__container__list__item">Done !</li>
+            </ul>
+        </div>
+    </div>
+    <div class="toggleControl">
+        <a class="toggle">
+            <input style="display:none" id="switch" type="checkbox" name="theme" />
+            <label for="switch">Toggle</label>
+        </a>
+    </div>
+    <br />
+    @RenderBody()
+</body>
+
+</html>
+<script src="~/Content/js/TaskBoard.js"></script>
+

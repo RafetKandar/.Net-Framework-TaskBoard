@@ -1,0 +1,44 @@
+﻿@using TaskBoard.Models.Classes
+@model List<TeknikKart>
+
+
+<div class="board">
+    <h3>
+        To Do
+        <button class="button"><i class="fa fa-plus"></i></button>
+    </h3>
+    <div class="dropzone">
+
+        @foreach (var x in Model)
+        {
+            <div class="card" draggable="true">
+                <div class="status violet">
+                    <a class="deleteButton" href="/TechnicalCard/DeleteTechnicalCard/@x.ID"><i class="fa fa-trash-o"></i></a>
+                    <a class="updateButton" href="/TechnicalCard/GetTechnicalCard/@x.ID"><i class="fa fa-refresh"></i></a>
+                </div>
+                <div style="width: 100%">
+                    <div class="card-body">
+                        <h5 class="card-title">@x.ProjeNo</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Kart No : @x.KartNo </h6>
+                        <p class="card-text">
+                            @if (x.IsinAciklamasi.Length > 38)
+                            {
+                                @x.IsinAciklamasi.Substring(0, 38)
+                            }
+
+                            @if (x.IsinAciklamasi.Length < 38)
+                            {
+                                @x.IsinAciklamasi
+                            }
+                        </p>
+                        <a href="/TechnicalCard/AddTechnicalCardWork/@x.ID " class="card-link gölgeToDo">Work Follow</a>
+                    </div>
+                    <h6 style="font-size:13px"><i class="fa fa-clock-o"></i> Tahmini Süre : <strong style="color:#c3c6c3" >@x.TahminSüresi.ToString().Substring(0,2) Gün @x.TahminSüresi.ToString().Substring(3,1) Saat</strong></h6>
+                </div>
+            </div>
+        }
+
+    </div>
+
+</div>
+

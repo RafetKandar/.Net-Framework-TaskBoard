@@ -1,0 +1,77 @@
+﻿@model TaskBoard.Models.Classes.MüsteriKart
+
+@{
+    Layout = "~/Views/Shared/_CardLayout.cshtml";
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Card Detail</title>
+</head>
+<body>
+            <h1 class="title">Müşteri Kartı</h1>
+            <form class="form-group" action="~/CustomerCard/AddCustomerCard" method="post">
+                <div class="info">
+                    <div class="info-item">
+                        <label class="icon" for="name"><i class="fas fa-pencil-alt"></i></label>
+                        <input class="infoInput" type="text" name="ProjeNo" id="ProjeNo" placeholder="Proje No/Adı" value="@Model.ProjeNo" required />
+                    </div>
+                    <div class="info-item">
+                        <label class="icon" for="name"><i class="fas fa-user"></i></label>
+                        <input class="infoInput" type="text" name="DolduranMusteri" id="DolduranMusteri" placeholder="Dolduran-Müşteri" value="@Model.DolduranMusteri" required />
+                    </div>
+                    <div class="info-item">
+                        <label class="icon" for="name"><i class="fas fa-calendar"></i></label>
+                        <input class="infoInput" type="text" name="Tarih" id="Tarih" placeholder="Tarih" value="@Model.Tarih" required />
+                    </div>
+                    <div class="info-item">
+                        <label class="icon" for="name"><i class="fas fa-pencil-alt"></i></label>
+                        <input class="infoInput" type="text" name="KartNo" id="KartNo" placeholder="Kart No" value="@Model.KartNo" required />
+                    </div>
+                    <div class="info-item">
+                        <label class="icon" for="age"><i class="fas fa-user"></i></label>
+                        <input class="infoInput" type="text" name="DolduranBimar" id="DolduranBimar" placeholder="Dolduran-BIMAR" value="@Model.DolduranBimar" required />
+                    </div>
+                    <div class="info-item">
+                        <label class="icon" for="age"><i class="fa fa-exclamation-triangle" style="font-size:14px"></i></label>
+                        <input class="infoInput" type="text" name="Risk" id="Risk" placeholder="Risk" value="@Model.Risk" required />
+                    </div>
+                    <div class="info-item">
+                        <label class="icon" for="email"><i class="fas fa-pencil-alt"></i></label>
+                        <input class="infoInput" type="text" name="ReferansNo" id="ReferansNo" placeholder="Referans No" value="@Model.ReferansNo" required />
+                    </div>
+                    <div class="info-item">
+                        <label class="icon" for="phone"><i class="fa fa-files-o"></i></label>
+                        <input class="infoInput" type="text" name="EkDokuman" id="EkDokuman" placeholder="Ek Döküman" value="@Model.EkDokuman" required />
+                    </div>
+                    <div class="info-item">
+                        <label class="icon" for="phone"><i class="fa fa-clock-o" style="color:red"></i></label>
+                        <input class="infoInput" type="text" name="TeknikST" id="TeknikST" placeholder="Teknik Süre Tahmini" value="@Model.TeknikST.ToString("#.0")" required />
+                    </div>
+                </div>
+                <div class="grade-type">
+                    <h3>İşlem Tipi : </h3>
+                    <div>
+                        <label class="example-radio">
+                            @ViewBag.type
+                            <input type="radio" checked>
+                            <span class="checkmark-radio"></span>
+                        </label>
+                    </div>
+                    <h3>Öncelik : </h3>
+                    <div>
+                        <input type="radio" style="margin-left:1px" checked>
+                        <label class="oncelik-radio" for="male">@ViewBag.first</label><br>
+                    </div>
+                </div>
+                <br />
+                <h3>İşin Açıklaması :</h3>
+                <textarea rows="10" name="IsinAciklamasi" id="IsinAciklamasi">@Model.IsinAciklamasi</textarea>
+                <h3>Notlar :</h3>
+                <textarea rows="5" name="Notlar" id="Notlar">@Model.Notlar</textarea>
+            </form>
+</body>
+</html>
+

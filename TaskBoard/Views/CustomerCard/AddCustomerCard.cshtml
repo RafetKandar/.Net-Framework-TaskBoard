@@ -1,0 +1,92 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_CardLayout.cshtml" ;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Card</title>
+</head>
+<body>
+            <h1 class="title">Müşteri Kartı</h1>
+            <form class="form-group" action="~/CustomerCard/AddCustomerCard" method="post">
+                <div class="info">
+                    <div class="info-item">
+                        <label class="icon" for="name"><i class="fas fa-pencil-alt"></i></label>
+                        <input class="infoInput" type="text" name="ProjeNo" id="ProjeNo" placeholder="Proje No/Adı" required />
+                    </div>
+                    <div class="info-item">
+                        <label class="icon" for="name"><i class="fas fa-user"></i></label>
+                        <input class="infoInput" type="text" name="DolduranMusteri" id="DolduranMusteri" placeholder="Dolduran-Müşteri" required />
+                    </div>
+                    <div class="info-item">
+                        <label class="icon" for="name"><i class="fas fa-calendar"></i></label>
+                        <input class="infoInput" type="text" name="Tarih" id="Tarih" placeholder="Tarih" required />
+                    </div>
+                    <div class="info-item">
+                        <label class="icon" for="name"><i class="fas fa-pencil-alt"></i></label>
+                        <input class="infoInput" type="text" name="KartNo" id="KartNo" placeholder="Kart No" required />
+                    </div>
+                    <div class="info-item">
+                        <label class="icon" for="age"><i class="fas fa-user"></i></label>
+                        <input class="infoInput" type="text" name="DolduranBimar" id="DolduranBimar" placeholder="Dolduran-BIMAR" required />
+                    </div>
+                    <div class="info-item">
+                        <label class="icon" for="age"><i class="fa fa-exclamation-triangle" style="font-size:13px"></i></label>
+                        <input class="infoInput" type="text" name="Risk" id="Risk" placeholder="Risk" required />
+                    </div>
+                    <div class="info-item">
+                        <label class="icon" for="email"><i class="fas fa-pencil-alt"></i></label>
+                        <input class="infoInput" type="text" name="ReferansNo" id="ReferansNo" placeholder="Referans No" required />
+                    </div>
+                    <div class="info-item">
+                        <label class="icon" for="phone"><i class="fa fa-files-o"></i></label>
+                        <input class="infoInput" type="text" name="EkDokuman" id="EkDokuman" placeholder="Ek Döküman" required />
+                    </div>
+                    <div class="info-item">
+                        <label class="icon" for="phone"><i class="fa fa-clock-o" style="font-size:14px"></i></label>
+                        <input class="infoInput" type="text" name="TeknikST" id="TeknikST" placeholder="Teknik Süre Tahmini" readonly />
+                    </div>
+                </div>
+                <div class="grade-type">
+                    <h3>İşlem Tipi : </h3>
+                    <div>
+                        <label class="example-radio">
+                            Yeni
+                            <input type="radio" name="IslemTipi" value="yeni">
+                            <span class="checkmark-radio"></span>
+                        </label>
+                        <label class="example-radio left">
+                            Düzeltme
+                            <input type="radio" name="IslemTipi" value="duzeltme">
+                            <span class="checkmark-radio"></span>
+                        </label>
+                        <label class="example-radio left">
+                            Geliştirme
+                            <input type="radio" name="IslemTipi" value="gelistirme">
+                            <span class="checkmark-radio"></span>
+                        </label>
+                        <label class="example-radio left">
+                            Test Senaryosu
+                            <input type="radio" name="IslemTipi" value="testsenaryosu">
+                            <span class="checkmark-radio"></span>
+                        </label>
+                    </div>
+                    <h3>Öncelik : </h3>
+                    <div>
+                        <input type="radio" id="male" name="Oncelik" value="musteri" style="margin-left:1px">
+                        <label class="oncelik-radio" for="male">Müşteri</label><br>
+                        <input type="radio" id="female" name="Oncelik" value="teknik" style="margin-left:20px">
+                        <label class="oncelik-radio" for="female">Teknik</label><br>
+                    </div>
+                </div>
+                <br />
+                <h3>İşin Açıklaması :</h3>
+                <textarea rows="10" name="IsinAciklamasi" id="IsinAciklamasi"></textarea>
+                <h3>Notlar :</h3>
+                <textarea rows="5" name="Notlar" id="Notlar"></textarea>
+                <button class="topSpace" type="submit">Müşteri Kartı Ekle</button>
+            </form>
+</body>
+</html>

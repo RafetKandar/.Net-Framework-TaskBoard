@@ -1,0 +1,54 @@
+﻿@model TaskBoard.Models.Classes.TeknikKart
+
+@{
+    Layout = "~/Views/Shared/_CardLayout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Card</title>
+</head>
+<body>
+            <h1 class="title">Teknik Kart</h1>
+            <form class="form-group" action="/TechnicalCard/UpdateTechnicalCard" method="post">
+                <fieldset>
+                    <legend class="fas fa-paperclip paperclip"></legend>
+                    <div class="info infoTop">
+                        <div class="info-item">
+                            <label class="icon" for="name"><i class="fas fa-pencil-alt"></i></label>
+                            <input class="infoInput" type="text" name="ProjeNo" id="ProjeNo" placeholder="Proje No/Adı" value="@Model.ProjeNo" required />
+                        </div>
+                        <div class="info-item">
+                            <label class="icon" for="name"><i class="fa fa-clock-o" style="color:red"></i></label>
+                            <input class="infoInput" type="text" name="TahminSüresi" id="TahminSüresi" placeholder="Tahmini Süre" value="@Model.TahminSüresi.ToString("#.0")" required />
+                        </div>
+                        <div class="info-item">
+                            <label class="icon" for="name"><i class="fas fa-calendar"></i></label>
+                            <input class="infoInput" type="text" name="Tarih" id="Tarih" placeholder="Tarih" value="@Model.Tarih" required />
+                        </div>
+                        <div class="info-item">
+                            <label class="icon" for="name"><i class="fas fa-pencil-alt"></i></label>
+                            <input class="infoInput" type="text" name="KartNo" id="KartNo" placeholder="Kart No" value="@Model.KartNo" required />
+                        </div>
+                        <div class="info-item">
+                            <label class="icon" for="age"><i class="fa fa-clock-o"></i></label>
+                            <input class="infoInput" type="text" name="GerçekleşenSüre" id="GerçekleşenSüre" placeholder="Gerçekleşen Süre" value="@Model.GerçekleşenSüre" required />
+                        </div>
+                        <div class="info-item">
+                            <label class="icon" for="age"><i class="fas fa-user"></i></label>
+                            <input class="infoInput" type="text" name="TeknikUzman" id="TeknikUzman" placeholder="Teknik Uzman" value="@Model.TeknikUzman" required />
+                        </div>
+                        <input type="hidden" placeholder="ID" name="MüsteriKartId" id="MüsteriKartId" value="@ViewBag.deger" required />
+                    </div>
+                    <br />
+                    <h3>İşin Açıklaması :</h3>
+                    <textarea rows="12" name="IsinAciklamasi" id="IsinAciklamasi">@Model.IsinAciklamasi</textarea>
+                    <h3>Notlar :</h3>
+                    <textarea rows="6" name="Notlar" id="Notlar">@Model.Notlar</textarea>
+                    <input type="hidden" placeholder="ID" name="ID" id="ID" value="@Model.ID" required />
+                    <button class="topSpace" value="AddCard" name="addCard" type="submit">Teknik Kart Güncelle</button>
+                </fieldset>
+            </form>
+</body>
+</html>
