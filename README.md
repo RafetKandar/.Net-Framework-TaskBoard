@@ -41,7 +41,7 @@ Taskboard is a job tracking application.
  
   <img src = "customer business tracking.PNG" width = 10000px height=500></img>
   
-   <li>Yukarıdaki ekran üzerinden tamamlanan işler bitti butonuna tıklanarak belirtilebilir ya da sil butonuna tıklanarak silme işlemi yapılabilir.<strong> (The completed jobs can be specified by clicking on the done button or they can be deleted by clicking the delete button.)
- --> </strong></li>
+   <li>Yukarıdaki ekran üzerinden tamamlanan işler bitti butonuna tıklanarak belirtilebilir ya da sil butonuna tıklanarak silme işlemi yapılabilir.  --> <strong> (The completed jobs can be specified by clicking on the done button or they can be deleted by clicking the delete button.)
+ </strong></li>
 
 </ul>
