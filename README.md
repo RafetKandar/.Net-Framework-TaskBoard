@@ -62,7 +62,7 @@ Taskboard is a job tracking application.
 
 <li>Eklenen kartların en alt kısmında kartlara ait tahmini tamamlanma süresi gösterilmektedir.Bu süre tahmini ML.NET ile yapılmıştır. <br> --> <strong> (The estimated completion time of the cards is shown at the bottom of the added cards. Used ML.NET) </strong></li>
  <br>
-<img src = "estimated_time.PNG" width = 10000px height=200></img>
+<img src = "estimated_time.PNG" width = 10000px height=160></img>
 
 ### <p style >NOT : Ek olarak uygulamanın içeresinde 6 adet White box testi bulunmaktadır. <br>
 ### <strong> (NOTE: In addition, there are 6 White box tests in the application.) </strong>
