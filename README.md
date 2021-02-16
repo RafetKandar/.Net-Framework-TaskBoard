@@ -36,12 +36,12 @@ Taskboard is a job tracking application.
 </p>
 
 <li>Bu ekran üzerinden müşteri kartına ait teknik kartlar ve detayları görüntülenebilir. </br>
-<strong> (Technical cards and details of the customer card can be viewed on this screen.) </strong>
+--> <strong> (Technical cards and details of the customer card can be viewed on this screen.) </strong>
 </li> </br>
  
   <img src = "customer business tracking.PNG" width = 10000px height=500></img>
   
    <li>Yukarıdaki ekran üzerinden tamamlanan işler bitti butonuna tıklanarak belirtilebilir ya da sil butonuna tıklanarak silme işlemi yapılabilir.<strong> (The completed jobs can be specified by clicking on the done button or they can be deleted by clicking the delete button.)
- </strong></li>
+ --> </strong></li>
 
 </ul>
