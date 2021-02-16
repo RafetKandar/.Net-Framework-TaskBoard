@@ -21,4 +21,6 @@ Taskboard is a job tracking application.
 </strong>
 </p>
  
+ <img src = "customer_update.PNG" width = 10000px height=450></img>
+ 
 </ul>
